@@ -2,7 +2,7 @@ package com.ramkishorevs.graphqlconverter.converter;
 
 import android.content.Context;
 import android.util.Log;
-import com.practo.fabric.core.utils.LogUtils;
+//import com.practo.fabric.core.utils.LogUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -70,7 +70,7 @@ public class GraphQueryProcessor {
                 }
             }
         } catch (IOException e) {
-            LogUtils.logException(e);
+//            LogUtils.logException(e);
         }
     }
 
@@ -86,7 +86,7 @@ public class GraphQueryProcessor {
             inputStreamReader.close();
             bufferedReader.close();
         } catch (IOException e) {
-            LogUtils.logException(e);
+//            LogUtils.logException(e);
         }
         return queryBuffer.toString();
     }
